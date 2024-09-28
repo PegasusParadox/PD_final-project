@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="style/style.css" />
+  <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">-->
+  <title>中正大學植物互動網</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/8bdac874be.js" crossorigin="anonymous"></script>
+
+  <!--張秉棋寫的功能-->
+  <script type="text/javascript" nonce="1ff85a1b37c341a4afa5ed9e90a"
+    src="//local.adguard.org?ts=1653497372319&amp;type=content-script&amp;dmn=cdn.discordapp.com&amp;pth=%2Fattachments%2F968134912345534514%2F979017775928451132%2Fmain.html&amp;app=chrome.exe&amp;css=3&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1"></script>
+  <script type="text/javascript" nonce="1ff85a1b37c341a4afa5ed9e90a"
+    src="//local.adguard.org?ts=1653497372319&amp;name=AdGuard%20Extra&amp;name=AdGuard%20Popup%20Blocker&amp;type=user-script"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js "></script>
+  <script src="jquery-ui.js"></script>
+</head>
+
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-togglable fixed-top navbar-dark" id="nav">
+    <div class="container">
+
+      <!-- Navbar brand (mobile) -->
+      <a class="navbar-brand d-lg-none m-0" href="main.html">
+        <img src="image/1.png" alt="" width="30" height="30" class="d-inline-block align-text-top">
+        CCU plant
+      </a>
+
+      <!-- Navbar toggler -->
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar collapse -->
+      <div class="navbar-collapse collapse" id="navbarCollapse">
+
+        <!-- Navbar nav -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link fw-bold fs-6" href="#Aboutus">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold fs-6" href="https://enews.ccu.edu.tw/" target="_blank">News</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link fw-bold fs-6" href="#map">
+              Map
+            </a>
+          </li>
+        </ul>
+
+        <!-- Navbar brand -->
+        <a class="navbar-brand d-none d-lg-flex mx-lg-auto" href="main.html">
+          <p class="fs-1 m-0 fw-bold">
+            CCU plant
+          </p>
+        </a>
+
+
+        <!-- Navbar nav -->
+        <div class="container-2">
+          <form>
+            <span class="icon"><i class="fa fa-search"></i></span>
+            <input type="search" id="search" onkeydown="In_Search(this)" placeholder="  植物名稱、地點  " />
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <header data-jarallax="" data-speed=".8" style="background-image: none; position: relative; z-index: 0;"
+    data-jarallax-original-styles="background-image: url(assets/img/1.jpg);">
+    <div class="d-flex flex-column min-vh-100 bg-black-50 pt-10 pt-md-8 pb-7 pb-md-0">
+      <div class="container my-auto">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6 text-center">
+
+            <!-- Subheading -->
+            <p class="text-center text-white mb-7 fs-4 fw-bold">
+              中正大學是一所人文薈萃的的綜合大學，其中更是不乏各式花草，被譽為台灣「最美大學」，而本網站即將帶你一覽中正花草的美景
+            </p>
+
+            <!-- Button -->
+            <a class="btn btn-success text-white text-primary-hover mb-7 mb-md-0" href="#Aboutus">
+              立即探索
+            </a>
+
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md">
+
+            <!-- Address -->
+            <p class="font-serif text-white-75 text-center text-md-end text-lg-end my-md-5">
+            <p class="text-white fw-bolder">地址:62102嘉義縣民雄鄉大學路一段168號</p>
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="jarallax-container-0"
+      style="position: absolute; top: 0px; left:0px; width: 100%; height: 100%; overflow: hidden; z-index: -100;">
+      <div
+        style="background-position: center; background-size: cover; background-repeat: no-repeat; background-image: url(&quot;https://colsoc.ccu.edu.tw/upload/indexManage/1/5d75c1bf9ac63.jpg&quot;); top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: none; transform-style: preserve-3d; backface-visibility: hidden; will-change: transform, opacity; margin-top: 0.159985px; transform: translate3d(0px, -0.159985px, 0px);">
+      </div>
+    </div>
+  </header>
+  <section class="pt-7 pt-md-9" id="Aboutus">
+    <div class="container" style="height:100px">
+      <div class="row"></div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+
+          <!-- Divider -->
+          <hr class="hr-sm" color="black">
+
+          <!-- Text -->
+          <p class="fs-lg lh-lg text-black mb-5 mb-md-0 fw-bolder">
+            中正大學的阿勃勒花季，亮黃色的花海總是吸引大批遊客前來參觀
+          </p>
+
+        </div>
+        <div class="col-md-5">
+
+          <!-- Media -->
+          <div class="media-decoration media-decoration-1 mb-5 mb-md-0">
+
+            <!-- Border -->
+            <div class="media-decoration-solid" data-jarallax-element="-40"
+              style="transform: translate3d(0px, 32.8151px, 0px);">
+              <div id="jarallax-container-2"
+                style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; z-index: -100;">
+                <div
+                  style="pointer-events: none; transform-style: preserve-3d; backface-visibility: hidden; will-change: transform, opacity; position: fixed;">
+                </div>
+              </div>
+            </div>
+            <!-- Border -->
+            <div class="media-decoration-border" data-jarallax-element="-40"
+              style="transform: translate3d(0px, 42.0699px, 0px);">
+              <div id="jarallax-container-3"
+                style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; z-index: -100;">
+                <div
+                  style="pointer-events: none; transform-style: preserve-3d; backface-visibility: hidden; will-change: transform, opacity; position: fixed;">
+                </div>
+              </div>
+            </div>
+
+            <!-- Image -->
+            <img class="media-decoration-img img-fluid" src="image/2.jpg" alt="...">
+
+          </div>
+
+        </div>
+        <div class="col-md-5 align-self-center mx-auto">
+
+          <!-- Heading -->
+          <h2 class="mb-2 fw-bold">
+            <i class="fa-regular fa-user"></i>
+            About us
+          </h2>
+
+          <!-- Text -->
+          <p class="mb-0 fs-5 text-secondary">
+            我們是中正大學資工系的學生，平時在路上總會遇到各式各樣的花草樹木，然而，學校並沒有一個完整的網頁給遊客們參觀，這也是為甚麼我們要設計植物導覽網站的緣由。
+          <p class="mb-0 fs-6 text-secondary">(圖片截自:https://hiking.biji.co/index.php?q=news&act=info&id=22347)</p>
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="container" style="height:100px">
+    <div class="row"></div>
+  </div>
+  <hr size="4px" class="m-auto" width="80%">
+  <section class="py-7 py-md-9" id="Aboutschool">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 order-md-2 align-self-end">
+
+          <!-- Divider -->
+          <hr class="hr-sm bg-primary">
+
+          <!-- Text -->
+          <p class="fs-lg lh-lg text-black mb-5 mb-md-0 fw-bolder">
+            中正大學鳳凰大道
+          </p>
+
+        </div>
+        <div class="col-md-4 order-md-3">
+
+          <!-- Media -->
+          <div class="media-decoration media-decoration-1 mb-5 mb-md-0">
+
+            <!-- Solid -->
+            <div class="media-decoration-solid" data-jarallax-element="-40"
+              style="transform: translate3d(0px, 32.8151px, 0px);">
+              <div id="jarallax-container-2"
+                style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; z-index: -100;">
+                <div
+                  style="pointer-events: none; transform-style: preserve-3d; backface-visibility: hidden; will-change: transform, opacity; position: fixed;">
+                </div>
+              </div>
+            </div>
+
+            <!-- Border -->
+            <div class="media-decoration-border" data-jarallax-element="-40"
+              style="transform: translate3d(0px, 42.0699px, 0px);">
+              <div id="jarallax-container-3"
+                style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; z-index: -100;">
+                <div
+                  style="pointer-events: none; transform-style: preserve-3d; backface-visibility: hidden; will-change: transform, opacity; position: fixed;">
+                </div>
+              </div>
+            </div>
+
+            <!-- Image -->
+            <img class="media-decoration-img img-fluid " src="image/3.jpg" alt="..." width: 100%>
+
+          </div>
+
+        </div>
+        <div class="col-md-5 order-md-1 align-self-center mx-auto">
+
+          <!-- Heading -->
+          <h2 class="mb-2 fw-bold">
+            <i class="fa-solid fa-graduation-cap"></i>
+            About school
+          </h2>
+
+          <!-- Text -->
+          <p class="mb-0 fs-5 text-secondary">
+            國立中正大學，簡稱中正大學、中正大、中正，創校於1989年，是一所位於臺灣嘉義縣民雄鄉的國立大學。中正大學為臺灣綜合大學系統的成員，其設有文、理、社會科學、工、管理、法、教育七學院，並以社會科學、法學、電腦科學等領域見長。
+          <p class="mb-0 fs-6 text-secondary">(圖片截自:https://www.storm.mg/lifestyle/311071?page=1)</p>
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr size="4px" class="m-auto" width="80%">
+  <div class="container" style="height:100px" id="map">
+    <div class="row"></div>
+  </div>
+
+  <!--地圖標題-->
+  <div class="container">
+    <div class="row fs-1"><i class="fa-solid fa-map">校園地圖(游標懸浮於地圖上即可點擊並進入該區探索):</i></div>
+  </div>
+
+  <div class="container" style="height:100px">
+    <div class="row"></div>
+  </div>
+
+  <!--地圖-->
+  <div class="asd">
+    <svg height="1200" width="1400">
+      <a href="intro/gym.html" target="_blank">
+        <g class="A_area">
+          <path d="M 345 355 L805 355 L805 525 L345 525Z"></path>
+        </g>
+      </a>
+      <a href="intro/library.html" target="_blank">
+        <g class="B_area">
+          <path d="M 345 535 L805 535 L805 740 L380 740 L345 653Z"></path>
+        </g>
+      </a>
+      <a href="intro/dorm.html" target="_blank">
+        <g class="C_area">
+          <path d="M 380 750 L805 750 L805 950 L470 1005 L485 883 L408 882Z"></path>
+        </g>
+      </a>
+      <a href="intro/study.html" target="_blank">
+        <g class="D_area">
+          <path d="M 815 355 L920 355 L975 378 L1315 378 L1315 445 L1280 470 L1218 433 L1062 565 L815 565Z"></path>
+        </g>
+      </a>
+      <a href="intro/door.html" target="_blank">
+        <g class="E_area">
+          <path d="M 815 950 L1000 900 L1115 855 L1100 795 L1050 780 L1030 780 L1025 730 L1090 705 L1050 570 L815 570Z">
+          </path>
+        </g>
+      </a>
+    </svg>
+  </div>
+  <div class="container" style="height:100px">
+    <div class="row"></div>
+  </div>
+
+  <!--最底下的狀態欄-->
+  <footer class="section bg-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div>
+            <h6 class="footer-heading text-uppercasse text-white fs-4 fw-bold">
+              <div style="letter-spacing:0px;">
+                <font face="monospace">Content</font>
+              </div>
+            </h6>
+            <ul class="list-unstyled footer-link mt-4">
+              <li><a href="#Aboutus">About us</a></li>
+              <li><a href="#Aboutschool">About school</a></li>
+              <li><a href="https://enews.ccu.edu.tw/" target="_blank">News</a></li>
+              <li><a href="#map">Map</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div>
+            <h6 class="footer-heading text-uppercasse text-white fs-4 fw-bold">
+              <div style="letter-spacing:0px;">
+                <font face="monospace">Region</font>
+              </div>
+            </h6>
+            <ul class="list-unstyled footer-link mt-4">
+              <li><a href="intro/dorm.html" target="_blank">宿舍區</a></li>
+              <li><a href="intro/library.html" target="_blank">圖書館</a></li>
+              <li><a href="intro/study.html" target="_blank">教學區</a></li>
+              <li><a href="intro/gym.html" target="_blank">體育館</a></li>
+              <li><a href="intro/door.html" target="_blank">校門口</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div>
+            <h6 class="footer-heading text-uppercasse text-white fs-4 fw-bold">
+              <div style="letter-spacing:0px;">
+                <font face="monospace">Official</font>
+              </div>
+            </h6>
+            <ul class="list-unstyled footer-link mt-4">
+              <li><a href="https://www.ccu.edu.tw/" target="_blank"><img src="image/1.png" border="0" width="100"
+                    height="100" alt="標誌"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div>
+            <h6 class="footer-heading text-uppercasse text-white fs-4 fw-bold">
+              <div style="letter-spacing:0px;">
+                <font face="monospace">School Information</font>
+              </div>
+            </h6>
+            <p class="contact-info mt-4">學校總機：05-2720411</p>
+            <p class="contact-info ">地址：621301嘉義縣民雄鄉大學路一段168號</p>
+            <div class="mt-5">
+              <ul class="list-inline">
+                <li class="list-inline-item"><a href="https://www.facebook.com/groups/2262307553" target="_blank"
+                    title="中正大學fb(另開新視窗)"><img src="https://www.ccu.edu.tw/image/footer/facebook.png" class="mr-2"
+                      style="width: 1.8rem;cursor: pointer" alt="中正大學粉絲團"></a></li>
+                <li class="list-inline-item"><a href="https://enews.ccu.edu.tw/" target="_blank"
+                    title="中正E報(另開新視窗)"><img src="https://www.ccu.edu.tw/image/footer/ccu_e_newspaper.png" class="mr-2"
+                      style="width: 2rem;cursor: pointer" alt="中正E報"></a></li>
+                <li class="list-inline-item"><a href="https://www.facebook.com/CCUSAbest/" target="_blank"
+                    title="中正學生會(另開新視窗)"><img src="https://www.ccu.edu.tw/image/footer/ccu_student_union.png"
+                      style="width: 2rem;cursor: pointer" alt="學生會"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="teal darken-4 py-3 text-center col col-12 text-white"><span>CCU PLANT © 2022</span></div>
+      </div>
+    </div>
+  </footer>
+
+  <!--script-->
+  <script src="js/vendor.js"></script>
+  <script src="js/nav.js"></script>
+  <script>
+    $(function () {
+      var terms = [
+        "體育館", "游泳池", "理學院(一)", "理學院(二)", "足壘球場", "高爾夫球練習場"
+        , "鳳凰木", "流蘇花"
+        , "圖書館", "文學院", "田徑場", "排球場", "籃球場", "網球場"
+        , "黃金風鈴木", "杜鵑", "水黃皮"
+        , "宿舍", "活動中心", "致遠樓", "創新育成中心"
+        , "櫻花", "羊蹄甲", "洋紅風鈴木", "紅瓶刷子樹"
+        , "教學區", "共同教室", "工學院(一)", "工學院(二)", "創新大樓", "法學院", "教育學院(一)", "教育學院(二)"
+        , "彩虹旃那", "台灣欒樹", "小葉欖仁", "苦楝", "大花紫薇"
+        , "校門口", "行政大樓", "管理學院", "社會科學院"
+        , "艷紫荊", "阿勃勒", "台灣紫薇", "紅粉撲", "木棉"
+      ];
+      // 連結搜尋欄位
+      $('#search').autocomplete({
+        source: terms
+      });
+    });
+
+    function In_Search(ele) {
+      const list_Gym = ["體育館", "游泳池", "理學院(一)", "理學院(二)", "足壘球場", "高爾夫球練習場", "鳳凰木", "流蘇花"];
+      const list_Library = ["圖書館", "文學院", "田徑場", "排球場", "籃球場", "網球場", "黃金風鈴木", "杜鵑", "水黃皮"];
+      const list_Dorm = ["宿舍", "活動中心", "致遠樓", "創新育成中心", "櫻花", "羊蹄甲", "洋紅風鈴木", "紅瓶刷子樹"];
+      const list_Study = ["教學區", "共同教室", "工學院(一)", "工學院(二)", "創新大樓", "法學院", "教育學院(一)", "教育學院(二)", "彩虹旃那", "台灣欒樹", "小葉欖仁", "苦楝", "大花紫薇"];
+      const list_Door = ["校門口", "行政大樓", "管理學院", "社會科學院", "艷紫荊", "阿勃勒", "台灣紫薇", "红粉撲", "木棉"];
+      if (event.key == 'Enter') {
+        if (list_Gym.includes(ele.value)) {
+          window.location.assign("intro/gym.html")
+        } else if (list_Library.includes(ele.value)) {
+          window.location.assign("intro/library.html")
+        } else if (list_Dorm.includes(ele.value)) {
+          window.location.assign("intro/dorm.html")
+        } else if (list_Study.includes(ele.value)) {
+          window.location.assign("intro/study.html")
+        } else if (list_Door.includes(ele.value)) {
+          window.location.assign("intro/door.html")
+        }
+      }
+
+    }
+
+  </script>
+</body>
+
+</html>

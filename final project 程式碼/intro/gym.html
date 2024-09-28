@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>體育館植物導覽</title>
+  <link rel="stylesheet" href="../style/stylese.css">
+  <link rel="stylesheet" href="../style/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/8bdac874be.js" crossorigin="anonymous"></script>
+  <!-- JQuery連結 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js "></script>
+  <!-- JQuery UI 連結 -->
+  <script src="../jquery-ui.js"></script>
+</head>
+
+<body style="background-color:rgba(247, 247, 247, 0.818);">
+  <nav class="navbar navbar-expand-lg navbar-togglable fixed-top navbar-dark" id="nav">
+    <div class="container">
+
+      <!-- Navbar brand (mobile) -->
+      <a class="navbar-brand d-lg-none m-0" href="../main.html">
+        <img src="image/1.png" alt="" width="30" height="30" class="d-inline-block align-text-top">
+        CCU plant
+      </a>
+
+      <!-- Navbar toggler -->
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar collapse -->
+      <div class="navbar-collapse collapse" id="navbarCollapse">
+
+        <!-- Navbar nav -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link fw-bold fs-6" href="../main.html#Aboutus">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold fs-6" href="https://enews.ccu.edu.tw/" target="_blank">News</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link fw-bold fs-6" href="../main.html#map">
+              Map
+            </a>
+          </li>
+        </ul>
+
+        <!-- Navbar brand -->
+        <a class="navbar-brand d-none d-lg-flex mx-lg-auto" href="../main.html">
+          <p class="fs-1 m-0 fw-bold">
+            CCU plant
+          </p>
+        </a>
+
+
+        <!-- Navbar nav -->
+        <div class="container-2">
+          <form>
+            <span class="icon"><i class="fa fa-search"></i></span>
+            <input type="search" id="search" onkeydown="In_Search(this)" placeholder="  植物名稱、地點  " />
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+  <div class="box" style="background-image: url(../image/gym0.jpg)">
+    <div class="p-5 text-center">
+      <h1 style="color: white;">體育館植物導覽</h1>
+    </div>
+  </div>
+  <div class="py-4"></div>
+
+  <div class="text-center p-3 border-bottom-black">
+    <div class="col-lg-6 mx-auto">
+      <h2>本區植物</h2>
+
+
+      <ul class="nav justify-content-center">
+        <ul class="nav nav-pills mx-auto " id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+              type="button" role="tab" aria-controls="pills-home" aria-selected="true">全部植物</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+              type="button" role="tab" aria-controls="pills-profile" aria-selected="false">喬木植物</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+              type="button" role="tab" aria-controls="pills-contact" aria-selected="false">灌木植物</button>
+          </li>
+        </ul>
+      </ul>
+
+    </div>
+  </div>
+
+
+  <div class="p-5">
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+        <!--全部-->
+        <div class="row">
+          <div class="col-1"></div>
+          <div class="col-12 col-md-5">
+            <div class="py-3 border-bottom">
+              <div class="row">
+                <div class="col-3 align-self-center">
+                  <div class="ratio ratio-1x1">
+                    <img class="object-fit-cover" src="../image/gym1.jpg" width="110.5" height="110.5">
+                  </div>
+                </div>
+                <div class="col-7">
+                  <h5 class="mb-2">鳳凰木</h5>
+                  <p class="mb-0">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i> 校園分布位置：禮堂、大學廣場、鳳凰大道、體育館
+                  </p>
+                  <p class="py-3"><a href="gym1.html" class="btn btn-outline-success">詳細資訊</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-5">
+            <div class="py-3 border-bottom">
+              <div class="row">
+                <div class="col-3 align-self-center">
+                  <div class="ratio ratio-1x1">
+                    <img class="object-fit-cover" src="../image/gym2.jpg" width="110.5" height="110.5">
+                  </div>
+                </div>
+                <div class="col-7">
+                  <h5 class="mb-2">流蘇花</h5>
+                  <p class="mb-0">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i> 校園分布位置：體育館停車場、社科院二館2樓<br>&emsp;
+                  </p>
+                  <p class="py-3"><a href="gym2.html" class="btn btn-outline-success">詳細資訊</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+        <!--喬木-->
+        <div class="row ">
+          <div class="col-1"></div>
+          <div class="col-12 col-md-5">
+            <div class="py-3 border-bottom">
+              <div class="row">
+                <div class="col-3 align-self-center">
+                  <div class="ratio ratio-1x1">
+                    <img class="object-fit-cover" src="../image/gym1.jpg" width="110.5" height="110.5">
+                  </div>
+                </div>
+                <div class="col-7">
+                  <h5 class="mb-2">鳳凰木</h5>
+                  <p class="mb-0">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i> 校園分布位置：禮堂、大學廣場、鳳凰大道、體育館
+                  </p>
+                  <p class="py-3"><a href="gym1.html" class="btn btn-outline-success">詳細資訊</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+        <div class="row">
+          <!--灌木-->
+          <div class="col-1"></div>
+          <div class="col-12 col-md-5">
+            <div class="py-3 border-bottom">
+              <div class="row">
+                <div class="col-3 align-self-center">
+                  <div class="ratio ratio-1x1">
+                    <img class="object-fit-cover" src="../image/gym2.jpg" width="110.5" height="110.5">
+                  </div>
+                </div>
+                <div class="col-7">
+                  <h5 class="mb-2">流蘇花</h5>
+                  <p class="mb-0">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i> 校園分布位置：體育館停車場、社科院二館2樓
+                  </p>
+                  <p class="py-3"><a href="gym2.html" class="btn btn-outline-success">詳細資訊</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </div>
+  <!--最底下的狀態欄-->
+  <footer class="section bg-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div>
+            <h6 class="footer-heading text-uppercasse text-white fs-4 fw-bold">
+              <div style="letter-spacing:0px;">
+                <font face="monospace">Content</font>
+              </div>
+            </h6>
+            <ul class="list-unstyled footer-link mt-4">
+              <li><a href="../main.html#Aboutus">About us</a></li>
+              <li><a href="../main.html#Aboutschool">About school</a></li>
+              <li><a href="https://enews.ccu.edu.tw/" target="_blank">News</a></li>
+              <li><a href="../main.html#map">Map</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div>
+            <h6 class="footer-heading text-uppercasse text-white fs-4 fw-bold">
+              <div style="letter-spacing:0px;">
+                <font face="monospace">Region</font>
+              </div>
+            </h6>
+            <ul class="list-unstyled footer-link mt-4">
+              <li><a href="dorm.html" target="_blank">宿舍區</a></li>
+              <li><a href="library.html" target="_blank">圖書館</a></li>
+              <li><a href="study.html" target="_blank">教學區</a></li>
+              <li><a href="gym.html" target="_blank">體育館</a></li>
+              <li><a href="door.html" target="_blank">校門口</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div>
+            <h6 class="footer-heading text-uppercasse text-white fs-4 fw-bold">
+              <div style="letter-spacing:0px;">
+                <font face="monospace">Official</font>
+              </div>
+            </h6>
+            <ul class="list-unstyled footer-link mt-4">
+              <li><a href="https://www.ccu.edu.tw/" target="_blank"><img src="../image/1.png" border="0" width="100"
+                    height="100" alt="標誌"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div>
+            <h6 class="footer-heading text-uppercasse text-white fs-4 fw-bold">
+              <div style="letter-spacing:0px;">
+                <font face="monospace">School Information</font>
+              </div>
+            </h6>
+            <p class="contact-info mt-4">學校總機：05-2720411</p>
+            <p class="contact-info ">地址：621301嘉義縣民雄鄉大學路一段168號</p>
+            <div class="mt-5">
+              <ul class="list-inline">
+                <li class="list-inline-item"><a href="https://www.facebook.com/groups/2262307553" target="_blank"
+                    title="中正大學fb(另開新視窗)"><img src="https://www.ccu.edu.tw/image/footer/facebook.png" class="mr-2"
+                      style="width: 1.8rem;cursor: pointer" alt="中正大學粉絲團"></a></li>
+                <li class="list-inline-item"><a href="https://enews.ccu.edu.tw/" target="_blank"
+                    title="中正E報(另開新視窗)"><img src="https://www.ccu.edu.tw/image/footer/ccu_e_newspaper.png" class="mr-2"
+                      style="width: 2rem;cursor: pointer" alt="中正E報"></a></li>
+                <li class="list-inline-item"><a href="https://www.facebook.com/CCUSAbest/" target="_blank"
+                    title="中正學生會(另開新視窗)"><img src="https://www.ccu.edu.tw/image/footer/ccu_student_union.png"
+                      style="width: 2rem;cursor: pointer" alt="學生會"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="teal darken-4 py-3 text-center col col-12 text-white"><span>CCU PLANT © 2022</span></div>
+      </div>
+    </div>
+  </footer>
+  <!--script-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+  <script src="../js/vendor.js"></script>
+  <script src="../js/nav.js"></script>
+  <script>
+    $(function () {
+      var terms = [
+        "體育館", "游泳池", "理學院(一)", "理學院(二)", "足壘球場", "高爾夫球練習場"
+        , "鳳凰木", "流蘇花"
+        , "圖書館", "文學院", "田徑場", "排球場", "籃球場", "網球場"
+        , "黃金風鈴木", "杜鵑", "水黃皮"
+        , "宿舍", "活動中心", "致遠樓", "創新育成中心"
+        , "櫻花", "羊蹄甲", "洋紅風鈴木", "紅瓶刷子樹"
+        , "教學區", "共同教室", "工學院(一)", "工學院(二)", "創新大樓", "法學院", "教育學院(一)", "教育學院(二)"
+        , "彩虹旃那", "台灣欒樹", "小葉欖仁", "苦楝", "大花紫薇"
+        , "校門口", "行政大樓", "管理學院", "社會科學院"
+        , "艷紫荊", "阿勃勒", "台灣紫薇", "紅粉撲", "木棉"
+      ];
+      // 連結搜尋欄位
+      $('#search').autocomplete({
+        source: terms
+      });
+    });
+
+    function In_Search(ele) {
+      const list_Gym = ["體育館", "游泳池", "理學院(一)", "理學院(二)", "足壘球場", "高爾夫球練習場", "鳳凰木", "流蘇花"];
+      const list_Library = ["圖書館", "文學院", "田徑場", "排球場", "籃球場", "網球場", "黃金風鈴木", "杜鵑", "水黃皮"];
+      const list_Dorm = ["宿舍", "活動中心", "致遠樓", "創新育成中心", "櫻花", "羊蹄甲", "洋紅風鈴木", "紅瓶刷子樹"];
+      const list_Study = ["教學區", "共同教室", "工學院(一)", "工學院(二)", "創新大樓", "法學院", "教育學院(一)", "教育學院(二)", "彩虹旃那", "台灣欒樹", "小葉欖仁", "苦楝", "大花紫薇"];
+      const list_Door = ["校門口", "行政大樓", "管理學院", "社會科學院", "艷紫荊", "阿勃勒", "台灣紫薇", "红粉撲", "木棉"];
+      if (event.key == 'Enter') {
+        if (list_Gym.includes(ele.value)) {
+          window.location.assign("../intro/gym.html")
+        } else if (list_Library.includes(ele.value)) {
+          window.location.assign("../intro/library.html")
+        } else if (list_Dorm.includes(ele.value)) {
+          window.location.assign("../intro/dorm.html")
+        } else if (list_Study.includes(ele.value)) {
+          window.location.assign("../intro/study.html")
+        } else if (list_Door.includes(ele.value)) {
+          window.location.assign("../intro/door.html")
+        }
+      }
+
+    }
+
+  </script>
+</body>
+
+</html>

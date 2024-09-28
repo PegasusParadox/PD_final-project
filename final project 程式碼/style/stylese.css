@@ -1,0 +1,26 @@
+.box {
+    padding: 15em;
+    background: url(dorm.jpg) no-repeat center;
+    background-size: cover ;
+}
+
+.nav-pills .nav-item .nav-link {
+    background-color: rgba(247, 247, 247, 0.818);;
+    color: green;
+  }
+.nav-pills .nav-item .nav-link .button{
+    background-color: rgba(247, 247, 247, 0.818);;
+    color: green;
+}
+.nav-tabs .nav-item .nav-link.active {
+    color: white;
+}
+.tab-content .tab-pane {
+    background-color: rgba(247, 247, 247, 0.818);;
+    color: black;
+    min-height: 200px;
+    height: auto;
+}
+.nav-pills .nav-item .nav-link.active {
+    background-color: green;
+  }
